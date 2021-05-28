@@ -1,0 +1,19 @@
+<?php   
+function tomarArray(&$arr){
+   for($i = 0; $i<10; $i++){
+    for($j = 0; $j<10 ; $j++){
+      $arr[$i][$j] = $i * $j;
+    }
+   }
+  
+}
+$arr=array();
+tomarArray($arr);
+echo "La diagonal principal :"."<br>";
+for($i = 0; $i<10; $i++){
+   
+      
+    echo "".$arr[$i][$i]."<br>";
+   }
+?>
+
