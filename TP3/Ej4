@@ -1,0 +1,37 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Document</title>
+	</head>
+	<body>
+	
+	    <form method="GET" action="">
+	        <label>Inserte un número</label>
+	        <input type="number" name="numero1">
+	       
+	        <input type="submit" value="enviar">
+	    
+	</body>
+	
+	</html>
+	<?php
+	
+
+
+	$numero1 = $_GET['numero1'] ?? "";
+	
+	$reverso = 0;  
+	    
+	 
+	while ($numero1 > 1)  
+	{  
+	$rem = $numero1 % 10;  
+	$reverso = ($reverso * 10) + $rem;  
+	$numero1 = ($numero1 / 10);   
+	}  
+	
+	echo "El reverso es: $reverso";  
+	  ?>
