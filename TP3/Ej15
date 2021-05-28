@@ -1,0 +1,17 @@
+<?php   
+function tomarArray(&$arr){
+   for($i = 0; $i<10; $i++){
+    for($j = 0; $j<10 ; $j++){
+      $arr[$i][$j] = $i * $j;
+    }
+   }
+  
+}
+$arr=array();
+tomarArray($arr);
+for($i = 0; $i<10; $i++){
+    for($j = 0; $j<10 ; $j++){
+      
+      echo "La columna es $i , fila : $j valor = ".$arr[$j][$i]."<br>";}
+   }
+?>
