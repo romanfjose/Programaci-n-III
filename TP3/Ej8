@@ -1,0 +1,31 @@
+<?php     
+$value = false;
+$numero=2; 
+$limite = 10;
+
+$a=array(); 
+
+$k = 0;
+while(count($a)<$limite){
+     $value = false;
+    for ($i = 2; $i <= $numero-1; $i++) {  
+
+      if ($numero % $i == 0) {  
+        $value= true;  
+      }   
+    } 
+        
+      
+
+if($value == false){
+    array_push($a,$numero);
+
+    
+                    }
+    $numero++;
+ $k++;
+}  
+print_r($a);
+   
+ 
+  ?>
