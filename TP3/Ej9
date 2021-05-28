@@ -1,0 +1,34 @@
+<?php     
+$numero=1; 
+$limite = 100;
+
+$a=array(); 
+
+while(count($a)<$limite){
+    
+    array_push($a,$numero);
+    $numero++;
+    
+} 
+   $l = 0;
+   $resultado = 0;
+
+ while($l<$limite){
+
+    $resultado +=  $a[$l];
+    $l++;
+    
+ }
+  
+    $multi = 1;
+    $l = 99;
+ while($l>=0){
+
+    $multi = $multi * $a[$l];
+    $l--;
+ }
+ echo ' Suma = ';  
+ print_r($resultado);
+ echo ' Multiplicación = ';  
+ print_r($multi);
+  ?>
