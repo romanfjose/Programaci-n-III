@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="">
+        <label>Inserte un número</label>
+        <input type="number" name="numero">       
+        <input type="submit" value="enviar">
+    </body>
+</html>
+<?php     
+if($_POST)  
+{  
+    $numero=$_POST['numero'];  
+    for ($i = 2; $i <= $numero-1; $i++) {  
+      if ($numero % $i == 0) {  
+      $value= True;  
+      }  
+}  
+if (isset($value)) {  
+     echo 'El número '. $numero . ' no es primo';  
+}  else {  
+   echo 'El número '. $numero . ' si es primo';  
+   }   
+}  
+  ?>
