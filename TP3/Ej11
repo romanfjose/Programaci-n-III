@@ -1,0 +1,22 @@
+<?php     
+
+$numero=1; 
+$limite = 100;
+
+$a=array(1,2);
+$b=array();
+
+$suma = 0;
+for($i = 1; $i<99; $i++){
+
+     $suma = $a[$i] + $a[$i-1];
+    array_push($a,$suma);
+ }  
+
+ for($l = 99; $l>=0; $l--){
+
+    
+   array_push($b,$a[$l]);
+} 
+ print_r($b);
+  ?>
