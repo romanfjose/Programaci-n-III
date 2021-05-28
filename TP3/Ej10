@@ -1,0 +1,16 @@
+<?php     
+
+$numero=1; 
+$limite = 100;
+
+$a=array(1,2);
+
+$suma = 0;
+for($i = 1; $i<99; $i++){
+
+     $suma = $a[$i] + $a[$i-1];
+    array_push($a,$suma);
+ }  
+
+ print_r($a);
+  ?>
